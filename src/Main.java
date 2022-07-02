@@ -21,7 +21,10 @@ public class Main {
     }
 
     public static void jogar(Rio rio, Barco barco) throws Exception {
-        System.out.println(rio.mostrar() +"\n" + barco.mostrar() +"\n------------------------------\n1 - Embarcar" +
+        System.out.println(rio.mostrar() +
+				"\n" + barco.mostrar() +
+				"\n------------------------------" + 
+				"\n1 - Embarcar" +
                 "\n2 - Desembarcar" +
                 "\n3 - Atravessar");
         int acao = sc.nextInt();
@@ -43,7 +46,6 @@ public class Main {
         } else if (acao == 2) {
             if (barco.passageiros.size() > 0) {
                 System.out.println(
-
                         "\nPossíveis desembarques:" +
                         "\n" + barco.mostrar());
                 System.out.println("Selecione o passageiro a desembarcar:");
